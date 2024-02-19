@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/mx-framework/mx-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/mx-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/mx-spring-boot-starter-druid/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/mx-spring-boot-starter-druid/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/mx-spring-boot-starter-hadoop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/mx-spring-boot-starter-hadoop/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/mx-spring-boot-starter-log/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/mx-spring-boot-starter-log/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/mx-spring-boot-starter-mq/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/mx-spring-boot-starter-mq/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/mx-spring-boot-starter-redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/mx-spring-boot-starter-redis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/mx-spring-boot-starter-sba/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/mx-spring-boot-starter-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/mx-spring-boot-starter-security/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/mx-spring-boot-starter-shiro/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/mx-spring-boot-starter-tx/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/mx-tx/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/mx-tx/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-framework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-manager/mx-module-manager-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-manager/mx-module-manager-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-manager/mx-module-manager-biz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-manager/mx-module-manager-biz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-manager/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-manager/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-mission/mx-module-mission-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-mission/mx-module-mission-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-mission/mx-module-mission-biz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-mission/mx-module-mission-biz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-mission/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-mission/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-sba/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-sba/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-uaa/mx-module-uaa-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-uaa/mx-module-uaa-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-uaa/mx-module-uaa-biz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-uaa/mx-module-uaa-biz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-uaa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mx-module-uaa/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-generator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-generator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

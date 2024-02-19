@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.high.mx.module.manager.dao.RoleMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, role, role_name
+    </sql>
+
+    <resultMap id="resRole" type="cn.high.mx.module.manager.dto.ResRole">
+        <result property="id" column="id" />
+        <result property="role" column="role" />
+        <result property="roleName" column="role_name" />
+        <collection property="permissions" column="id" ofType="cn.high.mx.module.manager.dto.PermissionDTO" javaType="ArrayList"
+        select="cn.high.mx.module.manager.dao.PermissionMapper.selectDTOByRoleId"/>
+    </resultMap>
+
+    <resultMap id="roleDTO" type="cn.high.mx.module.manager.dto.RoleDTO">
+        <result property="id" column="id" />
+        <result property="role" column="role" />
+        <result property="roleName" column="role_name" />
+    </resultMap>
+
+</mapper>

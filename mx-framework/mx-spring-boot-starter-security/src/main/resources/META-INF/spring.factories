@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=cn.high.mx.framework.security.config.JwtAutoConfiguration,\
+cn.high.mx.framework.security.config.ShiroAutoConfiguration

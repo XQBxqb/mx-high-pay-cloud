@@ -1,0 +1,84 @@
+version: "3.3"
+
+services:
+  mission:
+    build:
+      context: ./mx-module-mission/mx-module-mission-biz
+      dockerfile: Dockerfile-mission
+    image: cloud-mission:1.0
+    ports:
+      - "8888:8888"
+    volumes:
+      - /app/log/mission:/app/log/mission
+    env_file:
+      - mission.env
+    entrypoint: java -jar /app/cloud-mission.jar
+    container_name: mission
+    networks:
+      - app
+
+  uaa:
+    build:
+      context: ./mx-module-uaa/mx-module-uaa-biz
+      dockerfile: Dockerfile-uaa
+    image: cloud-uaa:1.0
+    ports:
+      - "8089:8089"
+    volumes:
+      - /app/log/uaa:/app/log/uaa
+    env_file:
+      - uaa.env
+    entrypoint: java -jar /app/cloud-uaa.jar
+    container_name: uaa
+    networks:
+      - app
+
+  manager:
+    build:
+      context: ./mx-module-manager/mx-module-manager-biz
+      dockerfile: Dockerfile-manager
+    image: cloud-manager:1.0
+    ports:
+      - "9990:9990"
+    volumes:
+      - /app/log/manager:/app/log/manager
+    env_file:
+      - manager.env
+    entrypoint: java -jar /app/cloud-manager.jar
+    container_name: manager
+    networks:
+      - app
+
+  gateway:
+    build:
+      context: ./mx-module-gateway
+      dockerfile: Dockerfile-gateway
+    image: cloud-gateway:1.0
+    ports:
+      - "8205:8205"
+    env_file:
+      - gateway.env
+    volumes:
+      - /app/log/gateway:/app/log/gateway
+    entrypoint: java -jar /app/cloud-gateway.jar
+    container_name: gateway
+    networks:
+      - app
+
+  sba:
+    build:
+      context: ./mx-module-sba
+      dockerfile: Dockerfile-sba
+    image: cloud-sba:1.0
+    ports:
+      - "9999:9999"
+    volumes:
+      - /app/log/sba:/app/log/sba
+    entrypoint: java -jar /app/cloud-sba.jar
+    container_name: sba
+    networks:
+      - app
+
+networks:
+  app:
+    external: true

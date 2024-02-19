@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.gene.mapper.DbVersionMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        installed_rank, version, description, type, script, checksum, installed_by, installed_on, execution_time, success
+    </sql>
+
+</mapper>

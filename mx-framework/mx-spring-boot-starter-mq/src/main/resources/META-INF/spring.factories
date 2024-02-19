@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+cn.high.mx.framework.mq.config.CachingConnectionFactoryAutoConfiguration,\
+cn.high.mx.framework.mq.config.RabbitmqAutoConfiguration

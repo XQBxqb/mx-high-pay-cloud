@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+cn.high.mx.framework.redis.config.CacheAutoConfiguration,\
+cn.high.mx.framework.redis.config.RedisAutoConfiguration,\
+cn.high.mx.framework.redis.config.RedissonService

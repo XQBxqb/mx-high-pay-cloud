@@ -1,0 +1,45 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: cloud-uaa
+          uri: lb://cloud-uaa
+          predicates:
+            - Path=/uaa/**
+          filters:
+            - StripPrefix=1
+
+        - id: cloud-manager
+          uri: lb://cloud-manager
+          predicates:
+            - Path=/manage/**
+          filters:
+            - StripPrefix=1
+
+        - id: cloud-mission
+          uri: lb://cloud-mission
+          predicates:
+            - Path=/mission/**
+          filters:
+            - StripPrefix=1
+  boot:
+    admin:
+      client:
+        # 服务端 url
+        url: http://${ADMIN_ADDR}:9999
+        instance:
+          # 客户端实例 url
+          service-url: http://127.0.0.1:8205
+          prefer-ip: true
+          # 客户端实例名称
+          name: cloud-gateway
+
+logging:
+  config: classpath:logback.xml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        # 暴漏的接口 - 所有接口
+        include: "*"

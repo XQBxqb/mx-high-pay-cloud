@@ -1,0 +1,6 @@
+server:
+  port: 8000
+
+mx:
+  shiro:
+    path: mx.high.tx.CustomShiroConfiguration

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.high.mx.module.manager.dao.PermissionMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, permission, permission_name
+    </sql>
+    <resultMap id="permissionDTO" type="cn.high.mx.module.manager.dto.PermissionDTO">
+        <result property="id" column="id" />
+        <result property="permission" column="permission" />
+        <result property="permissionName" column="permission_name" />
+    </resultMap>
+
+    <select id="selectDTOByRoleId" resultMap="permissionDTO">
+        SELECT *
+        FROM permission
+                 LEFT JOIN (
+            SELECT CONVERT(rp.permission_id, SIGNED) AS permission_id_int
+            FROM (
+                     SELECT permission_id
+                     FROM role_permission
+                     WHERE role_id = #{roleId}
+                 ) AS rp
+        ) AS temp
+        ON permission.id = temp.permission_id_int;
+    </select>
+
+</mapper>

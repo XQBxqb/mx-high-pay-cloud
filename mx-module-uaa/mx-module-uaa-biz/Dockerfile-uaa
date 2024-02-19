@@ -1,0 +1,14 @@
+FROM mx-jdk8/oracle
+
+# 创建日志目录
+RUN mkdir -p /app/log/uaa
+RUN touch /app/log/uaa/mx-uaa
+
+WORKDIR /app
+
+COPY ./target/mx-module-uaa-biz-1.0-SNAPSHOT.jar /app/cloud-uaa.jar
+
+ENV LANG=en_US.UTF8
+ENV TZ=Asia/Shanghai
+
+EXPOSE 8089

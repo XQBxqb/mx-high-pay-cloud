@@ -1,0 +1,14 @@
+FROM mx-jdk8/oracle
+
+# 创建日志目录
+RUN mkdir -p /app/log/sba
+RUN touch /app/log/sba/mx-sba
+
+WORKDIR /app
+
+COPY ./target/mx-module-sba-1.0-SNAPSHOT.jar /app/cloud-sba.jar
+
+ENV LANG=en_US.UTF8
+ENV TZ=Asia/Shanghai
+
+EXPOSE 9999

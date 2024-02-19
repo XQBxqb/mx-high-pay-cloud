@@ -1,0 +1,15 @@
+FROM mx-jdk8/oracle
+
+
+
+RUN mkdir -p /app/log/gateway
+RUN touch /app/log/gateway/mx-gateway
+
+COPY ./target/mx-module-gateway-1.0-SNAPSHOT.jar /app/cloud-gateway.jar
+
+WORKDIR /app
+
+ENV LANG=en_US.UTF8
+ENV TZ=Asia/Shanghai
+
+EXPOSE 8205

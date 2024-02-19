@@ -1,0 +1,14 @@
+FROM mx-jdk8/oracle
+
+# 创建日志目录
+RUN mkdir -p /app/log/mission
+RUN touch /app/log/mission/mx-mission
+
+COPY ./target/mx-module-mission-biz-1.0-SNAPSHOT.jar /app/cloud-mission.jar
+
+WORKDIR /app
+
+ENV LANG=en_US.UTF8
+ENV TZ=Asia/Shanghai
+
+EXPOSE 8888
